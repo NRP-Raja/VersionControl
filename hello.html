@@ -53,6 +53,78 @@
             color: #333;
             margin-top: 2rem;
         }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .about {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .about p {
+            line-height: 1.6;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .skills {
+            background-color: #f5f5f5;
+            padding: 3rem 2rem;
+        }
+
+        .skills-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .skills h2 {
+            color: #333;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .skill-card h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
     </style>
 </head>
 <body>
@@ -66,8 +138,39 @@
         </ul>
     </nav>
     
-    <div class="content">
-        <h1>Welcome to My Portfolio</h1>
-    </div>
+    <section class="hero" id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I'm a passionate developer creating amazing web experiences</p>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. 
+        I love working with modern technologies and building projects that make a difference.</p>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills-container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>HTML5</h3>
+                    <p>Semantic markup</p>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS3</h3>
+                    <p>Responsive design</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Interactive features</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Git</h3>
+                    <p>Version control</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
